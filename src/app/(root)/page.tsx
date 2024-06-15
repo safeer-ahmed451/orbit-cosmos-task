@@ -6,6 +6,9 @@ export default function Home() {
   return(
     <>
       <HeroBanner/>
+      <div className={styles.agencyInfo}>
+        <p>Proin efficitur, mauris vel condimentum pulvinar, velit <br /> orci consectetur ligula, eget egestas magna mi ut arcu. <br /> Phasellus nec odio orci.</p>
+      </div>
       <div className={styles.exploreMore}>
         <div className={styles.exploreMain}>
               <div className={styles.waves +" "+ styles.wave1}></div>

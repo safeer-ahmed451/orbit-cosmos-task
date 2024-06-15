@@ -28,6 +28,12 @@
   font-display: swap;
   src: url("../../public/assets/fonts/Gilroy-Regular.ttf");
 }
+@font-face {
+  font-family: "Rubik-MediumItalic";
+  font-style: normal;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Rubik-MediumItalic.ttf");
+}
 
 $primary-color: #EDBC5A;
 $black: #000;
@@ -39,6 +45,7 @@ $Gilroy-Bold: Gilroy-Bold, sans-serif !important;
 $Gilroy-Light: Gilroy-Light, sans-serif !important;
 $Gilroy-Thin: Gilroy-Thin, sans-serif !important;
 $Gilroy-Regular: Gilroy-Regular, sans-serif !important;
+$Rubik-MediumItalic: Rubik-MediumItalic, sans-serif !important;
 
 @mixin respond($breakpoint) {
   // $breakpoint is simply a variable that can have several values
