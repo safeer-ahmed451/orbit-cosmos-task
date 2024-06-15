@@ -1,0 +1,211 @@
+@import "@/styles/variables.scss";
+.heroBanner{
+    padding: 200px 0 0;
+    position: relative;
+    @include respond(midTab) {
+       padding: 150px 0 0;
+     }
+     @include respond(minTab) {
+        padding-top: 120px;
+      }
+    .shapeBg1{
+        position: absolute !important;
+        top: 0 !important;
+        width: 650px !important;
+        right: 0 !important;
+        left: auto !important;
+    }
+    .shape3{
+        position: absolute !important;
+        width: 325px !important;
+        right: auto !important;
+        left: -125px !important;
+        top: -30px !important;
+        @include respond(midTab) {
+            width: 125px !important;
+            left: -25px !important;
+          }
+    }
+    .shape4{
+        position: absolute !important;
+        width: 275px !important;
+        right: -50px !important;
+        left: auto !important;
+        top: 200px !important;
+        z-index: 1;
+        @include respond(minlaptop) {
+            display: none;
+        }
+    }
+    .shape5{
+        position: absolute !important;
+        width: 225px !important;
+        right: 110px !important;
+        left: auto !important;
+        top: 550px !important;
+        z-index: 1;
+        @include respond(extralargeScreen) {
+            right: 70px !important;
+        }
+        @include respond(minlaptop) {
+            display: none;
+        }
+    }
+    .sliderItems{
+        .title{
+            position: relative;
+            display: table;
+            z-index: 99;
+            h1{
+                font-family: $Gilroy-Bold;
+                font-size: 140px;
+                text-transform: uppercase;
+                line-height: 150px;
+                padding-left: 195px;
+                position: relative;
+                @include respond(largeScreen) {
+                    font-size: 125px;
+                    padding-left: 150px;
+                    line-height: 110px;
+                }
+                @include respond(midTab) {
+                    font-size: 100px;
+                    padding-left: 50px;
+                }
+                @include respond(minTab) {
+                    font-size: 60px;
+                    padding-left: 25px;
+                    line-height: 65px;
+                }
+                @include respond(smMobile) {
+                    font-size: 45px;
+                    padding-left: 25px;
+                    line-height: 50px;
+                }
+                span{
+                    display: block;
+                    color: transparent;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke: 1px $white
+                }
+            }
+            img{
+                position: absolute !important;
+            }
+            .shape1{
+                width: 156px !important;
+                right: 70px !important;
+                left: auto !important;
+                @include respond(minlaptop) {
+                    right: 60px !important;
+                    width: 130px !important;
+                }
+                @include respond(midTab) {
+                   width: 100px !important;
+                   right: 40px !important;
+                }
+                @include respond(minTab) {
+                    width: 80px !important;
+                    right: 0px !important;
+                    display: none;
+                }
+            }
+            .shape2{
+                width: 196px !important;
+                right: -165px !important;
+                left: auto !important;
+                top: 45px !important;
+                @include respond(minlaptop) {
+                    right: -120px !important;
+                    width: 160px !important;
+                    top: 30px !important;
+                }
+                @include respond(midTab) {
+                    width: 120px !important;
+                    right: -100px !important;
+                 }
+                 @include respond(minTab) {
+                   display: none;
+                }
+            }
+            
+        }
+        h2{
+            font-size: 100px;
+            font-family: $Gilroy-Light;
+            padding-left: 195px;
+            text-transform: uppercase;
+            letter-spacing: 70px;
+            line-height: 100px;
+            @include respond(largeScreen) {
+                font-size: 80px;
+                padding-left: 150px;
+            }
+            @include respond(midTab) {
+                font-size: 65px;
+                padding-left: 50px;
+                line-height: 70px;
+                letter-spacing:55px;
+            }
+            @include respond(minTab) {
+                font-size: 50px;
+                padding-left: 25px;
+                line-height: 55px;
+                letter-spacing:25px;
+            }
+            @include respond(smMobile) {
+                font-size: 30px;
+                padding-left: 25px;
+                line-height:35px;
+                letter-spacing:15px;
+            }
+        }
+        .slideImg{
+            width: 860px !important;
+            margin:50px 0 0 120px;
+            @include respond(largeScreen) {
+                margin-left: 80px;
+            }
+            @include respond(midTab) {
+               width: calc(100% - 40px) !important;
+               margin:40px auto 0 auto;
+            }
+            @include respond(smMobile) {
+                margin-top: 20px;
+             }
+        }
+        .caption{
+            margin-top: -90px;
+            position: relative;
+            z-index: 9;
+            @include respond(largeScreen) {
+                padding-left: 25px;
+                margin-top: -70px;
+            }
+            @include respond(midTab) {
+                margin-top: 0px;
+             }
+            small{
+                letter-spacing: 6px;
+                font-family: $Gilroy-Regular;
+                font-size: 16px !important;
+                text-transform: uppercase;
+            }
+            h3{
+                font-size: 36px;
+                font-family:$Gilroy-SemiBold;
+                margin-top: 12px;
+                span{
+                    font-family: $Gilroy-Light;  
+                }
+                @include respond(smMobile) {
+                    margin-top: 0px;
+                    font-size: 28px;
+                 }
+            }
+            .line1{
+                margin-top: 18px;
+            }
+        }
+    }
+}

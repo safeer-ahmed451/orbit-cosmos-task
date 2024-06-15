@@ -1,0 +1,16 @@
+@import "@/styles/variables.scss";
+.navItems{
+    flex-basis: 65%;
+    justify-content: flex-end;
+}
+@include respond(minlaptop) {
+    .navItems{
+        flex-basis: calc(100% - 250px);
+    }
+    .logoCol{
+        flex-basis: 190px;
+    }
+    .dotsToggle{
+        flex-basis: 60px;
+    }
+}

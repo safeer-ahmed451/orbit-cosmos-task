@@ -1,0 +1,184 @@
+@import "./variables.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 10px;
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #c0c0c0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+
+
+body {
+  color: $white;
+  padding: 0;
+  margin: 0;
+  background: $black;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.headerFixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  @include respond(minlaptop) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  nav{
+    transition: 500ms;
+    @include respond(minTab) {
+      padding: 30px 0 !important;
+    }
+  }
+  &.headerSticky{
+    background: $black;
+    nav{
+      padding: 20px 0 !important;
+      transition: 500ms;
+      @include respond(minTab) {
+        padding: 15px 0 !important;
+      }
+    }
+  }
+}
+.slick-slider{
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 100px;
+  @include respond(minTab) {
+    padding-bottom: 70px;
+  }
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-arrow{
+  position: absolute;
+  bottom: 0px;
+  width: 48px;
+  height: 45px;
+  overflow: hidden;
+  color: transparent;
+  background: #141413;
+  &:hover{
+    background-color: $primary-color;
+  }
+  &.slick-next{
+    left: 55px;
+    background-image: url(../../public/assets/svg/arrowRight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+  }
+  &.slick-prev{
+    background-image: url(../../public/assets/svg/arrowLeft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+  }
+}
+.animRotate {
+  animation: animRotate 35s linear infinite
+}
+@keyframes animRotate {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  100% {
+      transform: rotate(360deg)
+  }
+}
+.move1 {
+  animation: image_move4 10s infinite linear;
+}
+@keyframes image_move4 {
+  0% {
+      transform: translate(0,0)
+  }
+
+  15% {
+      transform: translate(0,20px)
+  }
+
+  30% {
+      transform: translate(-20px,20px)
+  }
+
+  45% {
+      transform: translate(-20px,40px)
+  }
+
+  60% {
+      transform: translate(-25px,30px)
+  }
+
+  75% {
+      transform: translate(-20px,20px)
+  }
+
+  90% {
+      transform: translate(0,20px)
+  }
+
+  100% {
+      transform: translate(0,0)
+  }
+}
+.menuToggle{
+  svg{
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+.dropPanel{
+  background: $dark-brown !important;
+}
+.mobileSideNav{
+  background: $dark-brown !important;
+  z-index: 99;
+}
